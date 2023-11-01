@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import SearchBar from "./SearchBar";
 
 
 function Navbar() {
   return (
-    <section className="bg-[#212121] h-14 flex items-center px-4 justify-between">
+    <section className="w-full bg-[#212121] h-14 flex items-center px-4 justify-between z-10">
       {/* COL 1 */}
       <div className="flex gap-3 items-center">
         {/* MENU BUTTON */}
@@ -32,35 +33,8 @@ function Navbar() {
       </div>
       {/* COL 2 */}
       <div className="flex gap-5 items-center">
-        {/* SEARCH */}
-        <div className="flex items-center">
-        <input 
-        type="text"
-        placeholder="Search"
-        className="bg-[#121212] placeholder:text-[#aaaaaa] placeholder:text-base px-[8px] w-[362px] h-10 border border-[#303030] text-[#fff] rounded-tl-2xl rounded-bl-2xl outline-none"
-        />
-
-                 {/* SEARCH BUTTON */}
-          <div className="bg-[#303030] w-[50px] h-10 flex justify-center items-center cursor-pointer rounded-tr-2xl rounded-br-2xl">
-            <Image
-              src={"/Search.png"}
-              alt="Search Icon"
-              width={24}  
-              height={24} 
-              className=""
-            />
-          </div>
-          {/* MICROPHONE ICON */}
-          <div className="p-1 bg-[#000] rounded-full ml-2 hover:bg-[#303030] duration-500 cursor-pointer">
-          <Image
-              src={"/MicrophoneIcon.png"}
-              alt="Microphone Icon"
-              width={30}  
-              height={30} 
-              className=""
-            />
-          </div>
-        </div>
+        {/* SEARCHBAR */}
+        <SearchBar />
       </div>
       {/* COL 3 */}
       <div className="flex items-center gap-4">
