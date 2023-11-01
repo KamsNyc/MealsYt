@@ -9,26 +9,10 @@ function Navbar() {
     <section className="w-full bg-[#212121] h-14 flex items-center px-4 justify-between z-10">
       {/* COL 1 */}
       <div className="flex gap-3 items-center">
-        {/* MENU BUTTON */}
-        <div className="hover:bg-[#303030] p-3 rounded-full">
-        <Image
-          src={"/MenuIcon.png"}
-          alt="Menu Icon"
-          width={18}
-          height={13}
-          className="cursor-pointer"
-        />
-        </div>
 
         {/* YOUTUBE LOGO */}
-        <div className="">
-        <Image
-          src={"/YoutubeLogo.png"}
-          alt="Logo Icon"
-          width={90}
-          height={21}
-          className="cursor-pointer"
-        />
+        <div className="ml-14">
+        <h1>LOGO</h1>
         </div>
       </div>
       {/* COL 2 */}

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Navbar from './components/Navbar'
 import BasicSidebar from './components/BasicSidebar'
 import Feed from './components/Feed'
@@ -6,16 +5,18 @@ import Feed from './components/Feed'
 export default function Home() {
   return (
     <main className="w-full h-full flex">
-    {/* SIDEBAR */}
-    <BasicSidebar />
+      {/* SIDEBAR */}
+      <div className="flex">
 
-    <section className="flex-1">
-  
+        <BasicSidebar />
+
+      
+      </div>
 
       {/* FEED */}
-      <Feed />
-    </section>
-  </main>
+      <div className="flex-1">
+        <Feed />
+      </div>
+    </main>
   ) 
 }
-                    

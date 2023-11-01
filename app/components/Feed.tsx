@@ -3,15 +3,18 @@ import Filter from './Filter'
 
 function Feed() {
   return (
-    <div className="flex-1 text-white pt-[56px] pl-[16px]">
+    <div className=" text-white mt-[56px] overflow-hidden">
     {/* FILTER */}
+    <div className="">
     <Filter />
+    </div>
     
     {/* MAIN FEED */}
+      <section className='p-4'>
+      1
 
-    <h1 className="h-[300px]">ddd</h1>
-      <h1 className="h-[300px]">ddd</h1>
-         <h1 className="h-[300px]">ddd</h1>
+      </section>
+    
   </div>
   )
 }
